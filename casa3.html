@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se calcula el factorial de un número usando recursividad.</title>
+    <script>
+function calcularFactorial(numero) {
+    if (numero === 0 || numero === 1) {
+        return 1;
+    } else {
+        return numero * calcularFactorial(numero - 1);
+    }
+}
+
+const numero = prompt("Ingresa un número para calcular su factorial:");
+alert("El factorial de " + numero + " es: " + calcularFactorial(numero));
+
+    </script>
+</head>
+<body>
+</body>
+</html>

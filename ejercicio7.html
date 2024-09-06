@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Edad</title>
+    <script>
+        function verificarEdad(nombre, edad) {
+            if (edad >= 18) {
+                return nombre + " es mayor de edad.";
+            } else {
+                return nombre + " es menor de edad.";
+            }
+        }
+
+            let nombre = prompt("Ingresa tu nombre:");
+            let edad = parseInt(prompt("Ingresa tu edad:"));
+
+            let resultado = verificarEdad(nombre, edad);
+            alert(resultado);
+        
+    </script>
+</head>
+<body>
+</body>
+</html>

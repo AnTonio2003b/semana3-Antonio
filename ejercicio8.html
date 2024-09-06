@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Producto</title>
+    <script>
+        function calcularProducto(num1, num2) {
+            return num1 * num2;
+        }
+
+        function mostrarResultado() {
+            // Solicitar dos números al usuario
+            let numero1 = parseFloat(prompt("Ingresa el primer número:"));
+            let numero2 = parseFloat(prompt("Ingresa el segundo número:"));
+
+            // Calcular el producto y mostrarlo en una alerta
+            let producto = calcularProducto(numero1,numero2);
+            alert("El producto de " + numero1 + " y " + numero2 + " es " + producto + ".");
+        }
+
+        // Ejecutar la función al cargar la página
+        window.onload = mostrarResultado;
+    </script>
+</head>
+<body>
+</body>
+</html>
